@@ -41,6 +41,8 @@ curl -vvvv -H "Host: bookinfo.app" 172.17.188.248:80/
 ## create istio gateway
 
 ```bash
+sudo ./k3s kubectl delete -f /mnt/d/dev/crashCourseonIstio/bookinfo-ingress.yaml -n istio-tutorial
+
 sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/bookinfo-gateway.yaml -n istio-tutorial
 
 sudo ./k3s kubectl describe gateway bookinfo-gateway -n istio-tutorial
