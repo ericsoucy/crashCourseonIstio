@@ -65,3 +65,9 @@ sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/destination-rule-all.y
 sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml -n istio-tutorial
 
 ```
+
+## routing on header match
+
+```bash
+sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml -n istio-tutorial
+```
