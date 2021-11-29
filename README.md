@@ -70,4 +70,7 @@ sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml 
 
 ```bash
 sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml -n istio-tutorial
+
+// add another match
+sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml -n istio-tutorial
 ```

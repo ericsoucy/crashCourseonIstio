@@ -14,6 +14,15 @@ spec:
     - destination:
         host: reviews
         subset: v2
+  - match:
+      - headers:
+          end-user:
+            exact: testuser
+    route:
+    - destination:
+        host: reviews
+        subset: v3
+
   - route:
     - destination:
         host: reviews
