@@ -56,5 +56,12 @@ itle>"
 sudo ./k3s kubectl get svc/istio-ingressgateway  -n istio-system -o jsonpath='{.spec.ports[?(@.name=="http2")].nodePort}'
 
 curl -vvvv -s  -H "Host: bookinfo.app" http://172.17.188.248:31765/productpage | grep -o "<title>.*</title>"
+```
+
+## create virtual service with weight
+
+```bash
+sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/destination-rule-all.yaml -n istio-tutorial
+sudo ./k3s kubectl apply -f /mnt/d/dev/crashCourseonIstio/virtual-service1.yaml -n istio-tutorial
 
 ```
